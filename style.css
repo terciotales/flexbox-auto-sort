@@ -1,0 +1,43 @@
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#categoryList {
+    font-family: monospace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+#categoryList > li {
+    background: #000;
+    color: #FFF;
+    padding: 4px 8px;
+    margin: 0 4px 4px 0;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#categoryList.expand > li {
+    flex: 1 1 auto;
+}
+
+.nome {
+    color: #0b5155;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 50px;
+    transition: color .2s, transform 1s;
+    width: fit-content;
+    height: fit-content;
+}
